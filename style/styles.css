@@ -1,0 +1,45 @@
+body {
+    background-color: #343A40;
+}
+
+.portada {
+    background-image: url('/images/portada/port1.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.portada::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 58, 64, 0.70); /* fondo blanco semi-transparente, cambia el rgba para cambiar el color y transparencia */
+}
+
+.portada > * {
+    position: relative; /* Asegura que el contenido esté encima del pseudo-elemento */
+    z-index: 1;
+}   
+.portada header{
+    height: 750px;
+}
+nav ul{
+    /* border: 1px solid black; */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+
+    justify-content: center;
+    align-items: top;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    text-decoration: none;
+}
