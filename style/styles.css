@@ -1,0 +1,186 @@
+body {
+    background-color: #343A40;
+    margin: 0;
+    padding: 0;
+}
+
+.portada {
+    background-image: url('/images/portada/port1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.portada::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 58, 64, 0.85); /* fondo blanco semi-transparente, cambia el rgba para cambiar el color y transparencia */
+    /* z-index: 0;   */
+}
+
+.portada > * {
+    position: relative; /* Asegura que el contenido esté encima del pseudo-elemento */
+    z-index: 1;
+}   
+.portada header{
+    height: 390px;
+}
+
+.portada a:hover{
+    color: #FF214F;
+}
+
+
+nav ul{
+    /* border: 1px solid black; */
+    list-style: none;
+    padding: 50px;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between ;
+    align-items: top;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffffd5;
+}
+.titulos h1 {
+    color: #F2BF0D;
+    font-size: 80px;
+    font-family: 'Fredoka One';
+    font-weight: 300;
+    margin-top: 35px;
+    
+}
+.titulos h2 {
+    color: #FFFFFF;
+}
+.titulos {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+.titulos h2{
+    margin-top: 20px;
+    font-size: 50px;
+}
+.titulos button{
+    margin-top: 40px;
+}
+.portadaLeft{
+    display: flex;
+    width: 29%;
+    justify-content: space-between;
+    
+}
+.portadaRight{
+    width: 29%;
+    display: flex;
+    justify-content: space-between;
+}
+.portadaMed{
+    width: 42%;
+    text-align: center;
+}
+.portadaLeft li{
+    justify-content: space-between;
+}
+.btn-danger{
+    background-color: #FF214F;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+.titulos .btn-danger{
+    height: 66px;
+    width:  190px;
+    font-size: 18px;
+}
+.portadaRight .btn-danger {
+    width: 138px    ;
+    height: 44px;   
+}
+/* Sobre Nosotros */
+.about-us{
+    margin-left: 80px;
+    margin-right: 80px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+.about-us img{
+    border-radius: 15px;
+    /* width: 350px; */
+    width: 600px;
+    margin-right: 40px;
+}
+.about-us-content {
+    color: #ffffffd5;
+    text-align: center;
+}
+.about-us h2{
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-family: 'Fredoka One';
+    color: #F2BF0D;
+}
+.content-faq{
+    display: flex;
+    justify-content: center ;
+    color: #ffffffd5;
+    
+}
+.faq-us h2{
+    color: #ffffffd5;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+}
+.faq-us {
+    margin-top: 0;
+    margin-left: 100px;
+    margin-right: 60px;
+}
+.content-faq{
+    details {
+        /* background-color: #f7f7f7; */
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    summary {
+        font-weight: bold;
+        cursor: default;
+        font-size: 18px;
+        padding: 10px 0; /* Mantiene un tamaño constante para el summary */
+        transition: none; /* Elimina cualquier transición */
+        margin: 0; /* Elimina márgenes adicionales */
+        pointer-events: none;
+    }
+
+    p {
+        margin-top: 5px;
+        font-size: 16px;
+    }
+}
+.portadafaq nav{
+    /* height: 1000px; */
+    height: 15%;
+}
