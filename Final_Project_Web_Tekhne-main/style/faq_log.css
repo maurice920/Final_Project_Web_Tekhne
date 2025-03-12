@@ -1,0 +1,240 @@
+body {
+    background-color: #282d31;
+    margin: 0;
+    padding: 0;
+    display: block;
+    height: 100%;
+}
+
+
+.portada{
+    height: 100px;
+    display: inline-block;
+    width: 100%;
+    background-color: #343A40;
+    text-align: center; 
+}
+.portada a:hover{
+    color: #FF214F;
+}
+
+
+nav ul{
+    /* border: 1px solid black; */
+    list-style: none;
+    /* padding: 50px; */
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between ;
+    margin-top: 30px;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffffd5;
+}
+
+.portadaLeft{
+    display: flex;
+    width: 29%;
+    justify-content: space-between;
+    
+}
+.portadaRight{
+    width: 29%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.portadaMed{
+    width: 42%;
+    text-align: start;
+    height: 100%;
+}
+.portadaLeft li{
+    justify-content: space-between;
+}
+.btn-danger{
+    background-color: #FF214F;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+.titulos .btn-danger{
+    height: 66px;
+    width:  190px;
+    font-size: 18px;
+}
+.portadaRight .btn-danger {
+    width: 138px    ;
+    height: 44px;   
+}
+
+/* FAQ */
+
+.content-faq .preguntas{
+    width: 100%;
+}
+
+.faq-us h2{
+    color: #ffffffd5;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+}
+.faq-us {
+    margin-top: 0;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.content-faq{
+    display: flex;
+    color: #ffffffd5;
+    justify-content:center;
+    gap: 8%;
+
+    details {
+        /* background-color: #f7f7f7; */
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    summary {
+        font-weight: bold;
+        cursor: default;
+        font-size: 18px;
+        padding: 10px 0; /* Mantiene un tamaño constante para el summary */
+        transition: none; /* Elimina cualquier transición */
+        margin: 0; /* Elimina márgenes adicionales */
+        pointer-events: none;
+    }
+
+    p {
+        margin-top: 5px;
+        font-size: 22px;
+    }
+}
+.portadafaq nav{
+    /* height: 1000px; */
+    height: 15%;
+}
+h2{
+    font-size: 50px;
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+
+.imagenLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagenLogo img{
+    height: 70%;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    border-top: 1px solid #ffffffd5;
+    color: #ffffff9c;
+
+}
+.portadaMed h2{
+    margin: 0;
+    font-size: 35px;
+    color: #FF214F;
+    font-family: 'Fredoka One';
+    font-weight: 24px;
+}
+/* LOGIN */
+.content-login{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 10%;
+}
+.form-login{
+    height: 700px;
+    width: 700px;
+    border: 1px solid #ffffffd5;   
+    border-radius: 10px;
+}
+.form-login form{
+    display: flex;
+    flex-direction: column;  
+}
+.form-login h2{
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    color: #FFFFFF;
+    text-align: left;
+    margin-left: 7%;
+    margin-right: 7%;
+
+    input{
+        border-radius: 15px;
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+}
+
+.send-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    button{
+        width: 214px;
+        height: 66px;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+}
+.extras{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 80px;
+    a{
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    a:hover{
+        color: #FF214F;
+    }
+}

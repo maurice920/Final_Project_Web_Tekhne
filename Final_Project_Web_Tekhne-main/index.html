@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Enlaces -->
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Estilos por defecto -->
+    <link rel="stylesheet" href="style/styles.css" />
+
+    <!-- Para el tipo de fuente - Titulox -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Importar la fuente Roboto desde Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Pollos-Hermanos</title>
+  </head>
+  <body>
+    <div class="portada">
+      <nav>
+        <ul>
+          <div class="portadaLeft">
+            <li>
+              <a href="index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="about.html">Acerca de</a>
+            </li>
+            <li>
+              <a href="#menu">Nuestro Menu</a>
+            </li>
+            <li>
+              <a href="#sucursales">Sucursales</a>
+            </li>
+          </div>
+
+          <div class="portadaMed">
+            <li>
+              <a href="index.html">
+                <img
+                  src="images/logo/logo_of.png"
+                  alt=""
+                  width="140"
+                  height="130"
+                />
+              </a>
+            </li>
+          </div>
+
+          <div class="portadaRight">
+            <li>
+              <a href="#ofertas">Ofertas</a>
+            </li>
+            <li>
+              <a href="faq.html">FAQ</a>
+            </li>
+            <li>
+              <a href="#contacto">Contactanos</a>
+            </li>
+            <li>
+              <a href="login.html">
+                <button class="btn btn-danger">Iniciar Sesion</button>
+              </a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+      <!-- Portada Inicial -->
+      <header>
+        <div class="titulos">
+          <h1>Los Pollos Hermanos</h1>
+          <h2>Donde algo delicioso siempre se está cocinando</h2>
+          <a href="#menu">
+            <button class="btn btn-danger">Ver productos</button>
+          </a>
+        </div>
+      </header>
+    </div>
+    <!-- Menu -->
+    <div id="menu">
+      <h2>MENU</h2>
+    </div>
+    <div class="platillos">
+      <div id="1" class="stPlat">
+        <!-- Platillos IMG -->
+        <img src="images/menu/gallary-1.jpg" onclick="abrirModal(this)" />
+        <!-- Ventana emergente -->
+        <div id="miModal" class="modal">
+          <div class="modal-content">
+            <h2>Información Detallada</h2>
+            <div class="info-content">
+              <img src="images/menu/gallary-1.jpg" alt="Imagen descriptiva" />
+              <div class="precio-of">
+                <h3>BS 35</h3>
+              </div>
+              <div class="info-text">
+                <p>
+                  Este plato presenta una tarta con una base de bizcocho
+                  esponjoso, cubierta con una generosa capa de crema batida. El
+                  centro está adornado con peras cocidas, dispuestas de forma
+                  elegante. Alrededor, se aprecian frutos secos picados y hojas
+                  verdes, creando un contraste visual y de texturas.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  onclick="alert('Más información aquí')"
+                >
+                  Leer más
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  onclick="cerrarModal(this)"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="2" class="stPlat">
+        <img src="images/menu/gallary-2.jpg" onclick="abrirModal(this)" />
+        <!-- Ventana emergente -->
+        <div id="miModal" class="modal">
+          <div class="modal-content">
+            <h2>Información Detallada</h2>
+            <div class="info-content">
+              <img src="images/menu/gallary-2.jpg" alt="Imagen descriptiva" />
+              <div class="precio-of">
+                <h3>BS 35</h3>
+              </div>
+              <div class="info-text">
+                <p>
+                  Dos tazones de desayuno saludables llenos de ingredientes
+                  nutritivos y coloridos. Cada tazón tiene una base cremosa y
+                  está cubierto con granola, nueces, semillas, frutas y bayas
+                  rosadas. La imagen destaca la variedad de texturas y colores,
+                  creando un contraste visual atractivo sobre un fondo oscuro.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  onclick="alert('Más información aquí')"
+                >
+                  Leer más
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  onclick="cerrarModal(this)"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="3" class="stPlat">
+        <img src="images/menu/gallary-3.jpg" onclick="abrirModal(this)" />
+        <!-- Ventana emergente -->
+        <div id="miModal" class="modal">
+          <div class="modal-content">
+            <h2>Información Detallada</h2>
+            <div class="info-content">
+              <img src="images/menu/gallary-3.jpg" alt="Imagen descriptiva" />
+              <div class="precio-of">
+                <h3>BS 35</h3>
+              </div>
+              <div class="info-text">
+                <p>
+                  Un plato abundante y colorido con higos frescos, uvas moradas,
+                  huevos duros y jamón serrano, dispuesto de forma artística. La
+                  mesa incluye tazas de café, tenedores y platos adicionales,
+                  sugiriendo un desayuno o brunch compartido. La luz natural
+                  resalta los detalles y la frescura de los alimentos.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  onclick="alert('Más información aquí')"
+                >
+                  Leer más
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  onclick="cerrarModal(this)"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="4" class="stPlat">
+        <img src="images/menu/gallary-4.jpg" onclick="abrirModal(this)" />
+        <!-- Ventana emergente -->
+        <div id="miModal" class="modal">
+          <div class="modal-content">
+            <h2>Información Detallada</h2>
+            <div class="info-content">
+              <img src="images/menu/gallary-4.jpg" alt="Imagen descriptiva" />
+              <div class="precio-of">
+                <h3>BS 35</h3>
+              </div>
+              <div class="info-text">
+                <p>
+                  Claro, aquí tienes la descripción en 3 líneas: Un plato
+                  vibrante con hummus verde brillante como base, adornado con
+                  tomates cherry de colores, granada, piñones y flores
+                  comestibles. Dos cucharas antiguas descansan en el centro,
+                  listas para servir esta creación culinaria artística.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  onclick="alert('Más información aquí')"
+                >
+                  Leer más
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  onclick="cerrarModal(this)"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="5" class="stPlat">
+        <img src="images/menu/gallary-5.jpg" onclick="abrirModal(this)" />
+        <!-- Ventana emergente -->
+        <div id="miModal" class="modal">
+          <div class="modal-content">
+            <h2>Información Detallada</h2>
+            <div class="info-content">
+              <img src="images/menu/gallary-5.jpg" alt="Imagen descriptiva" />
+              <div class="precio-of">
+                <h3>BS 35</h3>
+              </div>
+              <div class="info-text">
+                <p>
+                  Claro, aquí tienes la descripción en 2 líneas: Un tazón blanco
+                  repleto de arándanos frescos y jugosos, desbordando su
+                  capacidad. Los arándanos, de un azul intenso, se extienden
+                  sobre una superficie clara, creando un contraste visual
+                  llamativo. Super dulce y delicioso.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  onclick="alert('Más información aquí')"
+                >
+                  Leer más
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  onclick="cerrarModal(this)"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="6" class="stPlat">
+        <img src="images/menu/gallary-6.jpg" onclick="abrirModal(this)" />
+        <!-- Ventana emergente -->
+        <div id="miModal" class="modal">
+          <div class="modal-content">
+            <h2>Información Detallada</h2>
+            <div class="info-content">
+              <img src="images/menu/gallary-6.jpg" alt="Imagen descriptiva" />
+              <div class="precio-of">
+                <h3>BS 35</h3>
+              </div>
+              <div class="info-text">
+                <p>
+                  Una mesa llena de platos diversos, incluyendo una hamburguesa con aros de cebolla, ensalada fresca, pollo a la parrilla y huevos rellenos. La disposición cuidadosa y la variedad de alimentos sugieren una comida compartida o un buffet informal. La luz natural realza los colores y detalles de los platos.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  onclick="alert('Más información aquí')"
+                >
+                  Leer más
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  onclick="cerrarModal(this)"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="7" class="stPlat">
+        <img src="images/menu/gallary-7.jpg" onclick="abrirModal(this)" />
+        <!-- Ventana emergente -->
+        <div id="miModal" class="modal">
+          <div class="modal-content">
+            <h2>Información Detallada</h2>
+            <div class="info-content">
+              <img src="images/menu/gallary-7.jpg" alt="Imagen descriptiva" />
+              <div class="precio-of">
+                <h3>BS 35</h3>
+              </div>
+              <div class="info-text">
+                <p>
+                  Un plato de pizarra oscuro presenta un sándwich abierto con huevo cocido, aguacate y espinacas frescas. La disposición cuidadosa y la luz natural resaltan los colores vibrantes y la textura de los ingredientes. La presencia de flores y otros elementos en el fondo sugiere un ambiente de desayuno o brunch relajado y elegante.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  onclick="alert('Más información aquí')"
+                >
+                  Leer más
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  onclick="cerrarModal(this)"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="8" class="stPlat">
+        <img src="images/menu/gallary-8.jpg" onclick="abrirModal(this)" />
+        <!-- Ventana emergente -->
+        <div id="miModal" class="modal">
+          <div class="modal-content">
+            <h2>Información Detallada</h2>
+            <div class="info-content">
+              <img src="images/menu/gallary-8.jpg" alt="Imagen descriptiva" />
+              <div class="precio-of">
+                <h3>BS 35</h3>
+              </div>
+              <div class="info-text">
+                <p>
+                  Una taza de cerámica con chocolate caliente, galletas en un plato de madera y una galleta individual en un empaque transparente, dispuestos sobre una mesa de madera rústica. Una tela de encaje blanco y una cuchara de madera completan la escena, creando un ambiente acogedor y relajante. 
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  onclick="alert('Más información aquí')"
+                >
+                  Leer más
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  onclick="cerrarModal(this)"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="9" class="stPlat">
+        <img src="images/menu/gallary-9.jpg" onclick="abrirModal(this)" />
+        <!-- Ventana emergente -->
+        <div id="miModal" class="modal">
+          <div class="modal-content">
+            <h2>Información Detallada</h2>
+            <div class="info-content">
+              <img src="images/menu/gallary-9.jpg" alt="Imagen descriptiva" />
+              <div class="precio-of">
+                <h3>BS 35</h3>
+              </div>
+              <div class="info-text">
+                <p>
+                  Una pila de panqueques dorados y esponjosos se presenta en un plato blanco, adornada con fresas rojas vibrantes, arándanos oscuros y cacahuates. La textura crujiente de los panqueques contrasta con la suavidad de la fruta, creando una imagen apetitosa. El fondo oscuro resalta los colores y la presentación del desayuno.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  onclick="alert('Más información aquí')"
+                >
+                  Leer más
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  onclick="cerrarModal(this)"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="10" class="stPlat">
+        <img src="images/menu/gallary-10.jpg" onclick="abrirModal(this)" />
+        <!-- Ventana emergente -->
+        <div id="miModal" class="modal">
+          <div class="modal-content">
+            <h2>Información Detallada</h2>
+            <div class="info-content">
+              <img src="images/menu/gallary-10.jpg" alt="Imagen descriptiva" />
+              <div class="precio-of">
+                <h3>BS 35</h3>
+              </div>
+              <div class="info-text">
+                <p>
+                  Un plato blanco de porcelana con albaricoques cocidos, adornados con anís estrellado, almendras y flores comestibles. La disposición cuidadosa y la luz natural resaltan los colores vibrantes y la textura de los ingredientes. Un tenedor de plata descansa al lado, listo para disfrutar de este postre elegante y sencillo.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  onclick="alert('Más información aquí')"
+                >
+                  Leer más
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  onclick="cerrarModal(this)"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="11" class="stPlat">
+        <img src="images/menu/gallary-11.jpg" onclick="abrirModal(this)" />
+        <!-- Ventana emergente -->
+        <div id="miModal" class="modal">
+          <div class="modal-content">
+            <h2>Información Detallada</h2>
+            <div class="info-content">
+              <img src="images/menu/gallary-11.jpg" alt="Imagen descriptiva" />
+              <div class="precio-of">
+                <h3>BS 35</h3>
+              </div>
+              <div class="info-text">
+                <p>
+                  Un tazón blanco repleto de un batido de acai oscuro, adornado con fresas rojas, moras negras, plátano amarillo y coco rallado blanco. Las bayas de goji rojas se esparcen alrededor del tazón sobre una superficie gris, creando un contraste vibrante y apetitoso. La presentación sugiere un desayuno o merienda saludable y colorido.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  onclick="alert('Más información aquí')"
+                >
+                  Leer más
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  onclick="cerrarModal(this)"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="12" class="stPlat">
+        <img src="images/menu/gallary-12.jpg" onclick="abrirModal(this)" />
+        <!-- Ventana emergente -->
+        <div id="miModal" class="modal">
+          <div class="modal-content">
+            <h2>Información Detallada</h2>
+            <div class="info-content">
+              <img src="images/menu/gallary-12.jpg" alt="Imagen descriptiva" />
+              <div class="precio-of">
+                <h3>BS 35</h3>
+              </div>
+              <div class="info-text">
+                <p>
+                  Un pequeño pastel de chocolate, espolvoreado con azúcar glas, descansa en un plato negro, acompañado de hojas verdes y un tenedor antiguo. Al fondo, un colador con azúcar glas y una tela azul arrugada añaden textura a la escena. La iluminación suave y la composición cuidada resaltan la sencillez y elegancia del postre.
+                </p>
+                
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  onclick="alert('Más información aquí')"
+                >
+                  Leer más
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  onclick="cerrarModal(this)"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sucursales -->
+    <div id="sucursales">
+      <h2>SUCURSALES</h2>
+    </div>
+    <div class="sucursales">
+      <div class="container-carousel">
+        <div class="carruseles" id="slider">
+          <section class="slider-section">
+            <img src="images/sucursales/sucursal1.png" />
+          </section>
+          <section class="slider-section">
+            <img src="images/sucursales/sucursal2.png" />
+          </section>
+          <section class="slider-section">
+            <img src="images/sucursales/sucursal3.png" />
+          </section>
+          <section class="slider-section">
+            <img src="images/sucursales/sucursal4.png" />
+          </section>
+          <section class="slider-section">
+            <img src="images/sucursales/sucursal5.png" />
+          </section>
+        </div>
+        <div class="btn-left"><i class="bx bx-chevron-left"></i></div>
+        <div class="btn-right"><i class="bx bx-chevron-right"></i></div>
+      </div>
+    </div>
+    <!-- Ofertas -->
+    <div id="ofertas">
+      <h2>OFERTAS DE LA SEMANA</h2>
+
+      <div class="btn-ofertas">
+        <button type="button" class="btn btn-danger">Comidas</button>
+      </div>
+
+      <div class="ofertas">
+        <div class="card">
+          <img src="images/menu/of1.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <div class="precio-of">
+              <h3>BS 15</h3>
+            </div>
+            <h5 class="card-title">Hamburguesa Explosiva</h5>
+            <p class="card-text">
+              Pan suave, carne jugosa, queso derretido y los ingredientes más
+              frescos para una explosión de sabor en cada bocado. ¡Perfecta para
+              saciar tu antojo con el mejor precio!
+            </p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/ofertas/alitas.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <div class="precio-of">
+              <h3>BS 20</h3>
+            </div>
+            <h5 class="card-title">Alitas de Pollo Crujientes</h5>
+            <p class="card-text">
+              Doradas por fuera, tiernas por dentro y bañadas en la salsa de tu
+              elección. ¡La combinación perfecta entre sabor y textura que hará
+              que quieras más de una orden!
+            </p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/ofertas/salch.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <div class="precio-of">
+              <h3>BS 15</h3>
+            </div>
+            <h5 class="card-title">Salchipapa Suprema</h5>
+            <p class="card-text">
+              Papas doradas y crujientes, salchicha de primera calidad y una
+              mezcla irresistible de salsas que elevarán tu experiencia a otro
+              nivel. ¡No podrás resistirte a su increíble sabor!
+            </p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contacto -->
+    <div id="contacto">
+      <h2>CONTACTO</h2>
+      <div class="form-content">
+        <div class="form-map-add">
+          <!-- Mapa -->
+          <div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.514383563714!2d-68.12622452395762!3d-16.500109240729966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f2068956b2645%3A0xef11ebae8b26885f!2sPollos%20Copacabana!5e0!3m2!1ses!2sbo!4v1741209800243!5m2!1ses!2sbo"
+              width="740"
+              height="450"
+              style="border: 0; border-radius: 3%"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="inf-add">
+            <table>
+              <tbody>
+                <tr>
+                  <td scope="row" class="pe-4">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </td>
+                  <td>12345 Fake ST NoWhere, AB Country</td>
+                </tr>
+                <tr>
+                  <td scope="row" class="pe-4">
+                    <i class="fa-solid fa-suitcase"></i>
+                  </td>
+                  <td>(123) 456-7890</td>
+                </tr>
+                <tr>
+                  <td scope="row" class="pe-4">
+                    <i class="fa-solid fa-envelope"></i>
+                  </td>
+                  <td>info@website.com</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div>
+          <!-- Formulario-->
+          <form action="" class="form">
+            <div>
+              <div>
+                <label for="nombreCom">Nombre completo:</label>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="ingrese su nombre"
+                  id="nombreCom"
+                  required
+                />
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <label for="correo">Correo electronico:</label>
+              </div>
+              <div>
+                <input
+                  type="email"
+                  placeholder="hola@example.com"
+                  id="correo"
+                  required
+                />
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <label for="mensaje">Mensaje:</label>
+              </div>
+              <div>
+                <input type="text" placeholder="escribe aqui..." id="mensaje" />
+              </div>
+            </div>
+            <div class="button-form">
+              <button type="submit" class="btn btn-danger">ENVIAR</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <!-- Colocando los iconos -->
+      <div>
+        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+
+        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+
+        <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+
+        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+        <a href="#" target="_blank"><i class="fab fa-discord"></i></a>
+
+        <a href="#" target="_blank"><i class="fab fa-twitch"></i></a>
+
+        <a href="#" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      </div>
+
+      <div>&copy;Copyright 2025 - Mauricio Aldunate De La Barra</div>
+      <div>
+        <a href="#">Terminos y Condiciones</a>
+        <a href="#">Cookies</a>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="scripts/slide.js"></script>
+  </body>
+</html>
